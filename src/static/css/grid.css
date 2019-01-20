@@ -1,0 +1,54 @@
+/* ---------------------------- 等分栅格 -------------------------------- */
+.pl-grid { margin: -10px; }
+.pl-grid:before,
+.pl-grid:after { content: " "; display: table; }
+.pl-grid:after { clear: both; }
+.pl-grid-col { float: left; width: 100%; min-height: 1px; padding: 10px; }
+.pl-grid.xpc-x1 > .pl-grid-col { width: 100%; }
+.pl-grid.xpc-x2 > .pl-grid-col { width: 50%; }
+.pl-grid.xpc-x3 > .pl-grid-col { width: 33.33333%; }
+.pl-grid.xpc-x4 > .pl-grid-col { width: 25%; }
+.pl-grid.xpc-x5 > .pl-grid-col { width: 20%; }
+.pl-grid.xpc-x6 > .pl-grid-col { width: 16.66667%; }
+.pl-grid.xpc-x7 > .pl-grid-col { width: 14.28571%; }
+.pl-grid.xpc-x8 > .pl-grid-col { width: 12.5%; }
+.pl-grid.xpc-x9 > .pl-grid-col { width: 11.11111%; }
+.pl-grid.xpc-x10 > .pl-grid-col { width: 10%; }
+.pl-grid.xpc-x11 > .pl-grid-col { width: 9.09091%; }
+.pl-grid.xpc-x12 > .pl-grid-col { width: 8.33333%; }
+
+@media (max-width: 1199px) {
+  .pl-grid.xlpad-x1 > .pl-grid-col { width: 100%; }
+  .pl-grid.xlpad-x2 > .pl-grid-col { width: 50%; }
+  .pl-grid.xlpad-x3 > .pl-grid-col { width: 33.33333%; }
+  .pl-grid.xlpad-x4 > .pl-grid-col { width: 25%; }
+  .pl-grid.xlpad-x5 > .pl-grid-col { width: 20%; }
+  .pl-grid.xlpad-x6 > .pl-grid-col { width: 16.66667%; }
+  .pl-grid.xlpad-x7 > .pl-grid-col { width: 14.28571%; }
+  .pl-grid.xlpad-x8 > .pl-grid-col { width: 12.5%; }
+  .pl-grid.xlpad-x9 > .pl-grid-col { width: 11.11111%; }
+  .pl-grid.xlpad-x10 > .pl-grid-col { width: 10%; }
+  .pl-grid.xlpad-x11 > .pl-grid-col { width: 9.09091%; }
+  .pl-grid.xlpad-x12 > .pl-grid-col { width: 8.33333%; }
+}
+
+.pl-grid.xsummary {
+  padding: 30px 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* 小间距 */
+.pl-grid.xsmall {
+  margin: -14px;
+}
+
+.pl-grid.xsmall .pl-grid-col {
+  padding: 7px;
+}
+
+/* 答题卡 */
+.pl-grid.xac {
+  text-align: center;
+  color: #666;
+}
